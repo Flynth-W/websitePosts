@@ -1,0 +1,23 @@
+== API for website
+
+==== Features
+
+==== Libraries Used
+
+==== Getting Started
+
+* Install Dependencies
+* RUN
+
+==== User Roles and Access
+
+==== API Routes 
+
+==== Info API 
+* Models
+* Services
+* Controllers
+
+==== Setup
+
+**`Directory Structure`**
