@@ -122,10 +122,14 @@ savePost:{
   comments()
   savePost()
   notice()  
-
 ----
 
 ==== Setup
+
+----
+  env.json => default environment 
+  {PORT , MongoUrl , JWTkey }
+----
 
 
 **`Directory Structure`**
