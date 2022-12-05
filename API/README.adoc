@@ -97,9 +97,16 @@ savePost:{
 
 ----
 * Services
-* Controllers
+** Json Web Token
+----
+  create
+  verify
+----
 * Middleware
+** Authnetication
 
+* Controllers
+** User
 
 ==== Setup
 
