@@ -105,6 +105,7 @@ savePost:{
 * Middleware
 ** Authnetication
 ----
+  Authneticate(jwt,user:"admin"|"user")
 ----
 * Controllers
 ** User
