@@ -2,22 +2,60 @@
 
 ==== Features
 
+
 ==== Libraries Used
+
+* MongoDB
+* djwt@v2.4
 
 ==== Getting Started
 
 * Install Dependencies
 * RUN
 
+
+
 ==== User Roles and Access
 
+* user
+----
+  role: user
+  Access:
+    dbs:[profiles, accounts, posts, comments, savePost, setting, notices]
+----
+
+* admin
+----
+  role: root
+  Access: 
+    dbs:all
+----
+
+
 ==== API Routes 
+
+----
+  api/login
+  api/profile     require:  header :{jwt,...}
+  api/profiles    require:  header :{jwt,...}
+  api/posts       require:  header :{jwt,...}
+  api/comments    require:  header :{jwt,...}
+  api/savePost    require:  header :{jwt,...} 
+  api/notice      require:  header :{jwt,...}
+
+  api/admin/accounts    require: header :{jwt,...}
+----
+
+
 
 ==== Info API 
 * Models
 * Services
 * Controllers
+* Middleware
+
 
 ==== Setup
+
 
 **`Directory Structure`**
