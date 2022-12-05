@@ -43,7 +43,7 @@
   api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/notice      require:  header :{jwt,...}   (GET)
 
-  api/admin/accounts    require: header :{jwt,...} (GET,POST)
+  api/admin/accounts    require: header :{jwt,...} (GET,DELETE)
 ----
 
 
@@ -115,7 +115,14 @@ savePost:{
 * Controllers
 ** User
 ----
- api
+  account() 
+  profile() 
+  profiles()
+  posts()   
+  comments()
+  savePost()
+  notice()  
+
 ----
 
 ==== Setup
