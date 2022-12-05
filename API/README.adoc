@@ -50,6 +50,52 @@
 
 ==== Info API 
 * Models
+** user
+----
+account:{
+  nick_id:number :: default API
+  name:string
+  password:string
+  profile:number
+  dataUser:number
+}
+dataUser{
+  notices:number
+  savePost:number
+}
+profile:{
+  nick_id:number  :: default API
+  name:string
+  age:string
+  description:string[]
+  avatar:arrayBuffer
+  portada:arrayBuffer
+}
+post:{
+  nick_id :number :: default API
+  author:number   :: default API 
+  list_comments:number :: default API
+  text:string
+  image:arrayBuffer:: default API
+}
+comment:{
+  list_comments:number 
+  num_comment:number
+  text:string
+}
+savePost:{
+  nick_id:number 
+  list_1:{
+    name:string
+    posts:[nick_id,nick_id,....]
+  }
+  list_2:{...}
+  list_3:{...}
+  ...
+}
+
+
+----
 * Services
 * Controllers
 * Middleware
