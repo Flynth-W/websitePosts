@@ -8,13 +8,13 @@
 ==== Data Bases ~ Collections
 
 ----
-profile   : datos personales del usuario 
-account   : datos de cuenta
-notification : notificasiones
+profiles   : datos personales del usuario 
+accounts   : datos de cuenta
+notices    : notificasiones
 
-post      : publicasiones
-comment   : comentarios
-save      : publicasiones guardadas
+posts      : publicasiones
+comments   : comentarios
+savePost   : publicasiones guardadas
 
-setting   : configurasion del website
+setting    : configurasion del website
 ----
