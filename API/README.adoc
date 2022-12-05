@@ -35,15 +35,15 @@
 ==== API Routes 
 
 ----
-  api/login
-  api/profile     require:  header :{jwt,...}
-  api/profiles    require:  header :{jwt,...}
-  api/posts       require:  header :{jwt,...}
-  api/comments    require:  header :{jwt,...}
-  api/savePost    require:  header :{jwt,...} 
-  api/notice      require:  header :{jwt,...}
+  api/account                                   (LOGIN,POST,PUT,DELETE)
+  api/profile     require:  header :{jwt,...}   (GET,PUT)
+  api/profiles    require:  header :{jwt,...}   (GET)
+  api/posts       require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
+  api/comments    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
+  api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
+  api/notice      require:  header :{jwt,...}   (GET)
 
-  api/admin/accounts    require: header :{jwt,...}
+  api/admin/accounts    require: header :{jwt,...} (GET,POST)
 ----
 
 
@@ -114,6 +114,9 @@ savePost:{
 ----
 * Controllers
 ** User
+----
+ api
+----
 
 ==== Setup
 
