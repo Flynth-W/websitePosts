@@ -96,6 +96,11 @@ savePost:{
 
 
 ----
+* Utils
+** responseFunctions
+----
+  type {body:any,message:string|" resport ",ok:boolean }
+----
 * Services
 ** Json Web Token
 ----
