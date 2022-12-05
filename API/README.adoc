@@ -99,12 +99,13 @@ savePost:{
 * Services
 ** Json Web Token
 ----
-  create
-  verify
+  DJWT.Create(body:{})
+  DJWT.Verify(jwt)
 ----
 * Middleware
 ** Authnetication
-
+----
+----
 * Controllers
 ** User
 
