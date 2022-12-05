@@ -99,18 +99,18 @@ savePost:{
 * Utils
 ** responseFunctions
 ----
-  type {body:any,message:string|" resport ",ok:boolean }
+  type response={body:any,message:string|" resport ",ok:boolean }
 ----
 * Services
 ** Json Web Token
 ----
-  DJWT.Create(body:{})
-  DJWT.Verify(jwt)
+  DJWT.Create(body:{}):response
+  DJWT.Verify(jwt):response
 ----
 * Middleware
 ** Authnetication
 ----
-  Authneticate(jwt,user:"admin"|"user")
+  Authneticate(jwt,user:"admin"|"user"):response
 ----
 * Controllers
 ** User
