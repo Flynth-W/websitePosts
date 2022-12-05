@@ -97,7 +97,7 @@ savePost:{
 
 ----
 * Utils
-** responseFunctions
+** response
 ----
   type response={body:any,message:string|" resport ",ok:boolean }
 ----
