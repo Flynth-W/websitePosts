@@ -1,0 +1,20 @@
+==== MongoDB for website
+
+==== Getting Started
+
+==== User Roles and Access
+
+
+==== Data Bases ~ Collections
+
+----
+profile   : datos personales del usuario 
+account   : datos de cuenta
+notification : notificasiones
+
+post      : publicasiones
+comment   : comentarios
+save      : publicasiones guardadas
+
+setting   : configurasion del website
+----
