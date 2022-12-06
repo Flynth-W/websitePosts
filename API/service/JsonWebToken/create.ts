@@ -1,5 +1,5 @@
 import { create  } from "../../deps.ts"
-import type { response } from "../../utils/types/response.ts"
+import type { response } from "../../deps.ts"
 import type { Payload , Header } from "../../deps.ts"
 import { JWTbase } from "./base.ts"
 

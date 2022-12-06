@@ -1,4 +1,4 @@
-import type { response } from "../utils/types/response.ts"
+import type { response } from "../deps.ts"
 import { DJWT } from "../service/JsonWebToken/main.ts"
 import { UserDB } from "../db/user/main.ts"
 

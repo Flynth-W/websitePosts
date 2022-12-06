@@ -1,6 +1,6 @@
 import { JWTbase } from "./base.ts"
 import { verify } from "../../deps.ts";
-import type { response } from "../../utils/types/response.ts"
+import type { response } from "../../deps.ts"
 
 
 
