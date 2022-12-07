@@ -103,9 +103,9 @@ savePost:{
 
 ----
 * Utils
-** response
+** routes
 ----
-  type response={body:any,message:string|" resport ",ok:boolean }
+  _route(url:string):string[]
 ----
 * Services
 ** Json Web Token
