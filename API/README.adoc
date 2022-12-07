@@ -59,7 +59,7 @@ account:{
   profile:number
   dataUser:number
 }
-dataUser{
+data{
   notices:number
   savePost:number
 }
