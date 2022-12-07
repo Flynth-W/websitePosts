@@ -86,7 +86,7 @@ post:{
 }
 comment:{
   post:number 
-  num_comment:number
+  author:number
   text:string
 }
 savePost:{
