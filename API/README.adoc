@@ -60,8 +60,14 @@ account:{
   data:number
 }
 data{
+  nick_id:number
   notices:number
   savePost:number
+  setting:number
+}
+setting:{
+  nick_id:number
+  theme:string,
 }
 profile:{
   nick_id:number  :: default API
@@ -79,7 +85,7 @@ post:{
   image:arrayBuffer:: default API
 }
 comment:{
-  list_comments:number 
+  post:number 
   num_comment:number
   text:string
 }
