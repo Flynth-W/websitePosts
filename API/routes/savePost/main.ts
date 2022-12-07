@@ -1,4 +1,4 @@
-export function _posts(req:Request){
+export function _savePost(req:Request){
   const method =req.method
   switch ( method ){
     case "OPTIONS": console.log("controller user account OPTIONS");break
@@ -10,4 +10,5 @@ export function _posts(req:Request){
 
   return new Response()
 }
+
 

@@ -1,4 +1,4 @@
-export function _posts(req:Request){
+export function _comments(req:Request){
   const method =req.method
   switch ( method ){
     case "OPTIONS": console.log("controller user account OPTIONS");break
