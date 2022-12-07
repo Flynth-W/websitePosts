@@ -57,7 +57,7 @@ account:{
   name:string
   password:string
   profile:number
-  dataUser:number
+  data:number
 }
 data{
   notices:number
