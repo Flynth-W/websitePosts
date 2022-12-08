@@ -108,9 +108,16 @@ savePost:{
 ----
 * Services
 ** Json Web Token
+
 ----
   DJWT.Create(body:{}):response
   DJWT.Verify(jwt):response
+----
+
+** ~headCore
+
+----
+  default method Options: return Access-Controll
 ----
 * Middleware
 ** Authnetication
