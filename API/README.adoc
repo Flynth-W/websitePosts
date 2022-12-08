@@ -55,14 +55,6 @@ account:{
   nick_id:number :: default API
   name:string
   password:string
-  profile:number
-  data:number
-}
-data{
-  nick_id:number
-  notices:number
-  savePost:number
-  setting:number
 }
 notices:{
   nick_id:number
@@ -84,8 +76,8 @@ profile:{
 }
 post:{
   nick_id :number :: default API
-  author:number   :: default API 
-  list_comments:number :: default API
+  author:number   :: default API
+  post:number
   text:string
   image:arrayBuffer:: default API
 }
