@@ -37,7 +37,6 @@
 ----
   api/account                                   (LOGIN,POST,PUT,DELETE)
   api/profile     require:  header :{jwt,...}   (GET,PUT)
-  api/profiles    require:  header :{jwt,...}   (GET)
   api/posts       require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/comments    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
@@ -123,7 +122,6 @@ savePost:{
 ----
   account() 
   profile() 
-  profiles()
   posts()   
   comments()
   savePost()
