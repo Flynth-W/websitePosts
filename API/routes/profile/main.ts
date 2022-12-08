@@ -1,9 +1,10 @@
+import { UserCtrl } from "../../controller/user/main.ts"
 export function _profile(req:Request){
   const method =req.method
   switch ( method ){
-    case "OPTIONS": console.log("controller user account OPTIONS");break
-    case "GET"    : console.log("controller user account GET") ;break
-    case "PUT"    : console.log("controller user account PUT") ;break
+    case "OPTIONS": return UserCtrl.profile.options(req) 
+    case "GET"    : return UserCtrl.profile.get(req) 
+    case "PUT"    : return UserCtrl.profile.put(req) 
   }
 
   return new Response()

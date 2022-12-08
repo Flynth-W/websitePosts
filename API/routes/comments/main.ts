@@ -1,13 +1,13 @@
+import { UserCtrl } from "../../controller/user/main.ts"
 export function _comments(req:Request){
   const method =req.method
   switch ( method ){
-    case "OPTIONS": console.log("controller user account OPTIONS");break
-    case "GET"    : console.log("controller user account GET") ;break
-    case "POST"   : console.log("controller user account GET") ;break
-    case "PUT"    : console.log("controller user account GET") ;break
-    case "DELETE" : console.log("controller user account GET") ;break
+    case "OPTIONS": return UserCtrl.comments.options(req)
+    case "GET"    : return UserCtrl.comments.get(req)
+    case "POST"   : return UserCtrl.comments.post(req)
+    case "PUT"    : return UserCtrl.comments.put(req)
+    case "DELETE" : return UserCtrl.comments.delete(req)
   }
-
   return new Response()
 }
 
