@@ -4,6 +4,8 @@ import type { property  } from "../../deps.ts"
 export type TypeUserPost = {
   nick_id       ?: property | number    // default API
   author        ?: property | number    // default API
+  num_like      ?: property | number    // default API
+  num_comment   ?: property | number    // default API
   text          ?: property | string    //  require 
   image         ?: property | any       //  require | null
 }
