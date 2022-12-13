@@ -4,7 +4,6 @@ import type { response } from "../../../../deps.ts"
 const length =  ModelChecks.string.length(1,15)
 
 export async function _name(name:string):Promise<response>{
-  console.log("name fn")
   const resp = length(name)
   if(! resp.ok ){ return resp }
 
