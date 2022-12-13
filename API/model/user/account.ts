@@ -1,5 +1,6 @@
 import { Model  , ModelChecks } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
+import { _name } from "./checks/account/name.ts"
 
 export type TypeUserAccount = {
   nick_id ?: property | number      // default 
@@ -12,7 +13,7 @@ export type TypeUserAccount = {
 const _accountModel:TypeUserAccount= {
   name:{ 
     check:{
-      post:ModelChecks.string.length(1,10),
+      post:_name,
       put:ModelChecks.string.length(1,10)
     }
   },
@@ -28,8 +29,9 @@ export const ModelUserAccount = new Model(_accountModel)
 
 // TEST :
 // const user:TypeUserAccount={
-//     name:"exampleNe" ,
+//     name:"juansd" ,
 //     password:"exasd" ,
 // }
 // 
-// console.log( ModelUserAccount.Put(user))
+// console.log( await ModelUserAccount.Put(user))
+// console.log( await ModelUserAccount.Post(user))
