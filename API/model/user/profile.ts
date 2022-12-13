@@ -1,6 +1,5 @@
 import { Model  , ModelChecks } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
-import { ModelUserPost } from "./post.ts"
 
 export type TypeUserProfile = {
   nick_id?: property | number    // default API
@@ -44,11 +43,10 @@ const _Model:TypeUserProfile= {
 
 export const ModelUserProfile = new Model(_Model)
 
-// TEST :NOT
-// const user:TypeUserPost={
-//     text:"exampleNe" ,
-//     image:"exasd" ,
+// TEST 
+// const user:TypeUserProfile={
+//     name:"exampleNe" ,
 // }
 // 
-// console.log( ModelUserPost.Put(user))
+// console.log( ModelUserProfile.Post(user))
 
