@@ -8,6 +8,7 @@ function  handler(
   request: Request,
   conn: any
 ){
+  console.log(request)
   return RouteHandler(request)
 }
 
