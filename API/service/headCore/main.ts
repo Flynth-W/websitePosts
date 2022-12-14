@@ -1,7 +1,4 @@
 export function headCore(head:Headers):Headers{
-  console.log(head)
-
-
   const access = {
     headers : head.get("access-control-request-headers") || "" ,
     origin : head.get("origin") || ""
