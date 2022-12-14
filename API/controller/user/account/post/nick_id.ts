@@ -5,5 +5,5 @@ export async function _nick_id():Promise<number>{
   const leng = resp.length 
   const lastNick= resp[leng -1]
   if( lastNick === undefined ){ return 0 }
-  return lastNick.nick_id
+  return lastNick.nick_id + 1
 }
