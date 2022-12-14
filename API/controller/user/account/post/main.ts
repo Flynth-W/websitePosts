@@ -1,6 +1,6 @@
 import { ModelUserAccount } from "../../../../model/user/account.ts"
 import { ModelUserProfile } from "../../../../model/user/profile.ts"
-import { basic_header } from "../../../../utils/basic_header.ts"
+import { headCore } from "../../../../service/headCore/main.ts"
 import { _create } from "./create.ts"
 
 
@@ -19,8 +19,8 @@ export async function _post(req:Request){
     // create setting(base)
     // create savePost(base)
     const resp = await _create(body)
-    return new Response(JSON.stringify(resp.body),{status:resp.status  , headers:basic_header(req.headers) })
+    return new Response(JSON.stringify(resp.body),{status:resp.status  , headers:headCore(req.headers) })
     
   }
-  return new Response(null,{status:202  , headers:basic_header(req.headers) })
+  return new Response(null,{status:202  , headers:headCore(req.headers) })
 }
