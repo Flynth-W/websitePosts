@@ -2,6 +2,7 @@ import { Model  , ModelChecks } from "../../deps.ts"
 import type { property  } from "../../deps.ts"
 
 export type TypeUserComment = {
+  nick_id?: property | number   // default API
   post  ?: property | number    // default API
   author?: property | number    // default API
   text  ?: property | string    //  require 
@@ -9,12 +10,6 @@ export type TypeUserComment = {
 
 const _Model:TypeUserComment= {
   post:{
-    check:{
-      post:ModelChecks.default ,
-      put:ModelChecks.default
-    }
-  },
-  author:{
     check:{
       post:ModelChecks.default ,
       put:ModelChecks.default
