@@ -18,7 +18,7 @@ export async function Authenticate(jwt:string):Promise<response>{
         return {body:verify,message:"no exist",ok:false}  
     }
 
-    return {body:{resp},message:"OK",ok:true}
+    return {body:resp,message:"OK",ok:true}
 
 }
 
