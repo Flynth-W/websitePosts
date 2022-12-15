@@ -5,7 +5,6 @@ import { _nick_id } from "./nick_id.ts"
 import { _random } from "./random.ts"
 export function _post(req:Request){
   const routes = _route(req.url)
-  console.log(routes)
   switch ( routes[1] ){
     case "nick_id": return  _nick_id(req)
     case "author" : return  _author(req) 
