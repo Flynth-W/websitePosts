@@ -3,7 +3,6 @@ import { Authenticate } from "../../../middleware/Authentication.ts"
 import { _get_urls } from "./get_urls/main.ts"
 
 export async function _get(req:Request){
-  console.log(" setting GET")
   // authneticate jwt
   const jwt = req.headers.get("jwt") || ""
   const resp = await Authenticate(jwt)
