@@ -6,6 +6,7 @@ import { _posts    }  from "./posts/main.ts"
 import { _comments }  from "./comments/main.ts"
 import { _savePost }  from "./savePost/main.ts"
 import { _notice   }  from "./notice/main.ts"
+import { _setting  }  from "./setting/main.ts"
 
 export function RouteHandler(req:Request){
   const routes =_route(req.url)
@@ -16,6 +17,7 @@ export function RouteHandler(req:Request){
     case "comments" : return _comments(req)
     case "savePost" : return _savePost(req)
     case "notice"   : return _notice(req)
+    case "setting"  : return _setting(req)
   }
   return new Response()
 }
