@@ -37,6 +37,7 @@
 ----
   api/account                                   (LOGIN,POST,PUT,DELETE)
   api/profile     require:  header :{jwt,...}   (GET,PUT)
+  api/setting     require:  header :{jwt,...}   (GET,PUT)
   api/posts       require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/comments    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
