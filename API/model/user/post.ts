@@ -3,9 +3,9 @@ import type { property  } from "../../deps.ts"
 
 export type TypeUserPost = {
   nick_id       ?: property | number    // default API
-  author        ?: property | number    // default API
-  num_like      ?: property | number    // default API
-  num_comment   ?: property | number    // default API
+  author        ?: property | number    // default API  
+  num_like      ?: property | number    // default API | require
+  num_comment   ?: property | number    // default API | require
   text          ?: property | string    //  require 
   image         ?: property | any       //  require | null
 }
@@ -18,6 +18,18 @@ const _Model:TypeUserPost= {
     }
   },
   image:{
+    check:{
+      post:ModelChecks.default ,
+      put:ModelChecks.default
+    }
+  },
+  num_like:{
+    check:{
+      post:ModelChecks.default ,
+      put:ModelChecks.default
+    }
+  },
+  num_comment:{
     check:{
       post:ModelChecks.default ,
       put:ModelChecks.default
