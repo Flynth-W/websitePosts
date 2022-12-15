@@ -36,9 +36,15 @@
 
 ----
   api/account                                   (LOGIN,POST,PUT,DELETE)
-  api/profile     require:  header :{jwt,...}   (GET,PUT)
-  api/setting     require:  header :{jwt,...}   (GET,PUT)
-  api/posts       require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
+  api/profile/all                               (GET)
+  api/profile/nick_id/(default || number)/      (GET)
+  api/profile/                                  (PUT)
+  api/setting                                   (GET,PUT)
+  api/post/                                     (POST) 
+  api/post/nick_id/(default || number)                                  (GET,DELETE,PUT) 
+  api/posts/ramdon/                             (GET)
+  api/posts/nick_id/(default || number)                            (GET)
+
   api/comments    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/notice      require:  header :{jwt,...}   (GET)
