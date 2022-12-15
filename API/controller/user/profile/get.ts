@@ -1,6 +1,6 @@
 import { headCore } from "../../../service/headCore/main.ts"
 import { Authenticate } from "../../../middleware/Authentication.ts"
-import { UserDB }  from "../../../db/user/main.ts"
+import { _get_urls } from "./get_urls/main.ts"
 
 export async function _get(req:Request){
   console.log(" setting GET")
@@ -10,14 +10,7 @@ export async function _get(req:Request){
   if(!resp.ok){ return new Response(JSON.stringify({message:resp.message}) , { status:404 , headers:headCore(req.headers) }) } 
 
   // get mongo
-  try{
-    const nick_id = (resp.body ).nick_id
-    const data = await UserDB.profiles.findOne({nick_id})
-    return new Response(JSON.stringify(data),{status:200 , headers:headCore(req.headers)})
-
-  }catch(_e){
-    return new Response(JSON.stringify({message:_e}), {status:404 , headers:headCore(req.headers)})
-  }
+  return await _get_urls(req,(resp.body ).nick_id)
 }
 
 
