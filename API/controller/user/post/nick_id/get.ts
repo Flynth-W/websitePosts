@@ -13,10 +13,10 @@ export async function _get(req:Request){
 
   try{
   const nick_id =Number.parseInt(  (_route(req.url))[2]  )
-  if( !nick_id  ){ console.log( "nanana" ) }
+  if( !nick_id ){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
   
   const data = await UserDB.posts.findOne({nick_id})
-  if( !data ){ console.log("undefinde") }
+  if( !data ){ return new Response(JSON.stringify({ message:"eeror" }), {status:500 , headers:headCore(req.headers)}) }
 
   return new Response(JSON.stringify(data),{status:200,headers:headCore(req.headers)})
   }catch(_e){
