@@ -2,9 +2,9 @@
 
 
 const _body={
-  account:{name:"dosjuan",password:"passjuan"},
+  account:{name:"santos",password:"santos3221"},
   profile:{
-    name:"juanProfilr",
+    name:"santos",
   }
 }
 

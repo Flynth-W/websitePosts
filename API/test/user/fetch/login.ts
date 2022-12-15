@@ -2,8 +2,8 @@
 
 
 const _body={
-  name:"dosjuan",
-  password:"passjuan"
+  name:"santos",
+  password:"santos3221"
 }
 
 const resp = await fetch("http://localhost:8000/account/",{
@@ -14,4 +14,5 @@ const resp = await fetch("http://localhost:8000/account/",{
   body:JSON.stringify(_body)
 })
 
-console.log(resp)
+console.log(await resp.json().then(x => console.log(x.jwt)))
+// jwt = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJib2R5Ijp7Im5pY2tfaWQiOjN9fQ.kf9hONSKDQOjGWEpzxPZSNL5d67Fl8FiCNGz9tLSGtQ
