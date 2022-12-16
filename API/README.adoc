@@ -45,7 +45,7 @@
   api/post/author/<default || number>           (GET) 
   api/post/random/                              (GET)
 
-  api/comments    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
+  api/comments    require:  header :{jwt,...}   (GET,POST,DELETE)
   api/savePost    require:  header :{jwt,...}   (GET,POST,PUT,DELETE)
   api/notice      require:  header :{jwt,...}   (GET)
 
