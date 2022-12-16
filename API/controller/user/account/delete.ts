@@ -26,8 +26,9 @@ export async function _delete(req:Request){
     await UserDB.posts.deleteMany({author:nick_id})
     // delete comment   ( author: nick_id )
     await UserDB.comments.deleteMany({author:nick_id})
-    // delete comment  ( nick_id )
-    await UserDB.comments.deleteMany({ nick_id })
+    // delete comment  ( nick_id ) :: stop
+    // await UserDB.comments.deleteMany({ nick_id })
+    //
     return new Response(null , {status:200 , headers:headCore(req.headers)})
   }catch(_e){
     return new Response(JSON.stringify({message:_e}), {status:404 , headers:headCore(req.headers)})
