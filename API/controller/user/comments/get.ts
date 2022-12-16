@@ -13,7 +13,7 @@ export async function _get(req:Request){
   }
   // require http://api/comment/<number>
   const post =Number.parseInt(  (_route(req.url))[1]  )
-  if( !post ){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
+  if( !post && (post != 0) ){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
 
   try{
     // get mongo
