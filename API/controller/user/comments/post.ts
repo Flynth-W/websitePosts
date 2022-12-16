@@ -4,6 +4,9 @@ import type { TypeUserComment } from "../../../model/user/comment.ts"
 import { headCore } from "../../../service/headCore/main.ts"
 import { Authenticate } from "../../../middleware/Authentication.ts"
 import { UserDB }  from "../../../db/user/main.ts"
+import { _nick_id } from "./nick_id.ts"
+
+let nick = await _nick_id()
 
 export async function _post(req:Request){
   // authneticate jwt
@@ -23,9 +26,10 @@ export async function _post(req:Request){
 
   // mongo post
   const nick_id = (resp.body ).nick_id
-  const comment:TypeUserComment={author:nick_id,..._model.body}
+  const comment:TypeUserComment={nick_id:nick, author:nick_id,..._model.body}
   console.log(comment)
   await UserDB.comments.insertOne(comment)
+  nick++
   return new Response(null , {status:200 , headers:headCore(req.headers)})
 
 
