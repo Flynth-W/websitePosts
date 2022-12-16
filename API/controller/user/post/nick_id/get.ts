@@ -13,7 +13,7 @@ export async function _get(req:Request){
 
   try{
   const nick_id =Number.parseInt(  (_route(req.url))[2]  )
-  if( !nick_id ){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
+  if( !nick_id  && (nick_id != 0)){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
   
   const data = await UserDB.posts.findOne({nick_id})
   if( !data ){ return new Response(JSON.stringify({ message:"eeror" }), {status:500 , headers:headCore(req.headers)}) }

@@ -23,7 +23,7 @@ export async function _put(req:Request){
 
   // mongo post
   const nick_id =Number.parseInt(  (_route(req.url))[2]  )
-  if( !nick_id ){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
+  if( !nick_id && (nick_id != 0)){ return new Response(JSON.stringify({ message:"eeror" }),{status:500,headers:headCore(req.headers)})}
   await UserDB.posts.updateOne({nick_id},{$set:body})
 
   return new Response(null,{status:200,headers:headCore(req.headers)})
