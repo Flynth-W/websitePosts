@@ -1,1 +1,6 @@
+@import "./Header/main.css";
 
+body {
+  margin:  0%;
+  background-color: #333333;
+}
