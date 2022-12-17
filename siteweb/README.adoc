@@ -1,0 +1,72 @@
+== NextJS 
+
+==== Routes
+
+* http://sitepost/
+* http://sitepost/login                 
+* http://sitepost/profile/id/*number
+* http://sitepost/profile/me/           
+* http://sitepost/post/create/          
+* http://sitepost/post/show/*number
+
+=== page structure
+
+  Header: nav , avatar , search 
+  main: page default url 
+
+=== src
+
+==== Components
+  
+  Layout
+  Header/
+    main
+    user/...
+    navigation/.. 
+    search/...
+
+==== design Page
+  
+  ../_Docs/page.design
+
+==== Pages
+
+* index
+  
+  show random posts
+
+* login
+
+  create account .
+  sign in .
+
+* profile
+** id
+
+  show one profile , require id in url .
+
+** me
+
+  show me profile , require id in url .
+  edit profile
+
+* post
+** create
+
+  IU to create post
+
+** show
+  
+  show complete post
+
+==== Styles
+use css native for project
+component with has  css file
+
+----
+  global.css
+  components/
+    Header/
+      main.css
+      ...
+----
