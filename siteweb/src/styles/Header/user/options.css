@@ -1,0 +1,29 @@
+
+.Top-User-Options {
+  background-color: #03172e;
+  position: absolute ;
+  left: 0.5em;
+  top: 0.5em;
+  width:15em ;
+  height: 25em;
+  cursor: default ;
+  border-radius: 1em;
+  padding: 1em 1em 1em 1em;
+}
+.Top-User-Options-Button {
+  background-color: #aaaaaa;
+  display: flex;
+}
+.Top-User-Options-Button-exit {
+  position:absolute;
+  background-color: #555555;
+  cursor: pointer;
+  right: 0 ;
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  text-align: center;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border-radius: 0.5em;
+}
+
