@@ -4,7 +4,6 @@
 /* base Top page */ 
 .Top {
   background-color: #03071e;
-  padding: 2%  1%  1%  1% ;
   display: flex;
   justify-content: space-between ;
 } 
