@@ -1,5 +1,6 @@
 @import "./Header/main.css";
 @import "./Posts/main.css";
+@import "./index/main.css";
 
 body {
   margin:  0%;
