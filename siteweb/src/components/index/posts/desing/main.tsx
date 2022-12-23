@@ -1,23 +1,20 @@
-import { Actions } from "./actions"
-import { Author } from "./author"
-import { Image } from "./image"
-import { Options } from "./options"
-import { Text } from "./text"
-
+import { PostTop } from "./Top/main"
+import { PostBody } from "./Body/main"
+import { PostBottom } from "./Bottom/main"
 
 export function Desing(){
 
   return (
-  <div>
-    <div>
-      <Options/>
-      <Author/>
+  <div className="Post">
+    <div className="Post-Top">
+      <PostTop/>
     </div>
-    <div>
-      <Text/>
-      <Image/>
+    <div className="Post-Body">
+      <PostBody/>
     </div>
-    <Actions/>
+    <div className="Post-Bottom">
+      <PostBottom/>
+    </div>
   </div>
       )
 }

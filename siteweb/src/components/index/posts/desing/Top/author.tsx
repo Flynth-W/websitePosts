@@ -1,7 +1,7 @@
 
 export function Author(){
   return (
-  <div>
+  <div className="Post-Author">
     Author
   </div>
       ) 
