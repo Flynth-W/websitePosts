@@ -1,9 +1,0 @@
-@import "./user/main.css" ;
-@import "./search/main.css" ;
-@import "./navigation/main.css" ;
-/* base Top page */ 
-.Top {
-  background-color: #03071e;
-  display: flex;
-  justify-content: space-between ;
-} 

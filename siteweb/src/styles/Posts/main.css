@@ -1,9 +1,0 @@
-@import "./actions.css" ;
-@import "./author.css" ;
-@import "./image.css" ;
-@import "./options.css" ;
-@import "./text.css" ;
-
-.Post {
-  background-color: #005534;
-}
