@@ -1,7 +1,5 @@
 export default ()=>{
   return (
-    <div>
-      Profile Page
-    </div>
+    <div>Page profile me</div>
       )
 }
