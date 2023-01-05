@@ -14,13 +14,6 @@ export default function Layout(props:any){
     data:{get:_data,set:_setData}
   }
 
-  function _onClick(x){
-  console.log(x)
-    if( x.target.onclick === null ){
-      _Layout.onclick({notify})  
-    }
-
-  }
 
   return (
   <div className="App" >
