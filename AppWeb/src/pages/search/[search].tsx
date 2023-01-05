@@ -1,7 +1,8 @@
+
 export default ()=>{
   return (
     <div>
-      Index Page
+      Search Page
     </div>
       )
 }

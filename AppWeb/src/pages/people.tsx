@@ -1,7 +1,8 @@
+
 export default ()=>{
   return (
     <div>
-      Index Page
+      People Page
     </div>
       )
 }

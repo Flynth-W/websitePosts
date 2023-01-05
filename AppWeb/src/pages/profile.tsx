@@ -1,7 +1,7 @@
 export default ()=>{
   return (
     <div>
-      Index Page
+      Profile Page
     </div>
       )
 }
