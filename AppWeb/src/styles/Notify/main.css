@@ -1,0 +1,46 @@
+.Notify {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.NotifyBodyHidden{
+  
+    outline: none;
+    z-index: 2202;
+    position: fixed;
+    left: 1354px;
+    top: 48px;
+    background-color: #00ff00;
+    display: none;
+}
+
+.NotifyBody {
+  background-color: #445599;
+  outline: none;
+  z-index: 2202;
+  position: fixed;
+  left: 1354px;
+  top: 1em;
+  height: 20em;
+}
+
+
+.NotifyButton {
+  display: flex;
+}
+.ButtonNotify {
+  position:absolute;
+  background-color: #555555;
+  cursor: pointer;
+  left: 1354px;
+  top: 48px;
+
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  text-align: center;
+  padding: 0.3em 0.3em 0.3em 0.3em;
+  border-radius: 0.5em;
+}
+

@@ -1,0 +1,14 @@
+@import "./Pages/main.css";
+@import "./Header/main.css";
+@import "./Notify/main.css";
+
+/* components*/
+body {
+  margin:  0%;
+  background-color: #111111;
+}
+
+
+.App {
+ background-color: #112222;
+}
