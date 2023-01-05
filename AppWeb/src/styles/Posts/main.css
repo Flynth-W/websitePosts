@@ -1,0 +1,47 @@
+@import "./acctions.css";
+
+.Post{
+  background-color: #005534;
+  position: relative;
+  width: 60em;
+}
+.Post-Top {
+  background-color: #770044;
+  display: flex;
+}
+.Post-Author {
+  background-color: #994000;
+  position: absolute;
+
+  right: 0;
+  height: 1.5em;
+}
+.Post-Options {
+  background-color: #004520;
+  
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.Post-Body {
+  background-color: #444444;
+  display: block;
+}
+.Post-Text{
+  background-color: #aaaa00;
+}
+.Post-Image{
+  background-color: #00aa00;
+}
+
+
+.Post-Bottom {
+  background-color: #994400 ;
+}
+.Post-Acctions{
+  background-color: #004455;
+  display: flex;
+  justify-content: space-between ;
+  padding: 0.2em;
+}
+
