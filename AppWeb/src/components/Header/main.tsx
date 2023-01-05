@@ -1,22 +1,18 @@
+import { User } from "./user/main"
+import { Navigation } from "./navigation/main"
+import { Search } from "./search/main"
+import { _onclick } from "./on/onclick"
 
 export function Header (props:any){
-  const _notify = props.notify
-    async function _onClick(x){
-      console.log("3")
-    }
-    function showNotify(_x){
-
-      if( !_notify.show.get ){ 
-        _notify.data.set(<div className="NotifyBody" onClick={_onClick}>casa sistem</div>)
-        _notify.show.set(true)
-      }
-//        console.log(_notify.set(<div className="NotifyBody">casa sistem</div>)) 
-      console.log("2")
-    }
+  const cmpts={
+    notify:props.notify    
+  }
 
   return (
-    <div className="Header" onClick={showNotify}>
-      header
+    <div id="idHeader" className="Header"  onClick={(x)=>{_onclick("idHeader",x,cmpts)}}>
+      <User cmpts={cmpts}/>
+      <Navigation/>
+      <Search/>
     </div>
   )
 }
