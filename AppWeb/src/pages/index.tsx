@@ -1,7 +1,11 @@
+import { Posts } from "../components/posts/main"
+
 export default ()=>{
   return (
-    <div>
-      Index Page
+    <div className="Index">
+      <div className="Index-Post">
+        <Posts/>
+      </div>
     </div>
       )
 }

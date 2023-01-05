@@ -1,8 +1,10 @@
+import  { useRouter } from "next/router"
 
 export default ()=>{
+  const route = useRouter()
+  const  { post} = route.query
+  
   return (
-    <div>
-      More Page
-    </div>
+    <div>Page post/number*{post}</div>
       )
 }
