@@ -1,6 +1,7 @@
 @import "./Pages/main.css";
 @import "./Header/main.css";
 @import "./Notify/main.css";
+@import "./Posts/main.css";
 
 /* components*/
 body {
