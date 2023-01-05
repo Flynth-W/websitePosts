@@ -1,0 +1,12 @@
+.Index {
+  background-color: #555500;
+  position: relative;
+}
+
+.Index-Post {
+  background-color: #0066aa ;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
