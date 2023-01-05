@@ -1,0 +1,14 @@
+.HeaderUser{
+  margin: 0.5em;
+  display: flex;
+}
+.HUAvatar{
+  border-radius: 50%;
+  cursor: pointer;
+}
+.HeaderCreate{
+  background-color: #445500;
+}
+.HeaderNotify{
+  background-color: #005555;
+}

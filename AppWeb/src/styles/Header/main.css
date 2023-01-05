@@ -1,4 +1,11 @@
+@import "./user.css";
+@import "./search.css";
+@import "./navigation.css";
+
 .Header {
-  background-color: #ff0000;
-  cursor: pointer;
+  background-color: #03071e;
+  display: flex;
+  justify-content: space-between ;
+  position: relative;
+
 }
