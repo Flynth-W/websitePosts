@@ -5,6 +5,6 @@ export default ()=>{
   const  { word} = route.query
   console.log(route.query) 
   return (
-    <div>Page show/number*{word}</div>
+    <div className="SearchPage">en desarollo ...</div>
   )
 }
