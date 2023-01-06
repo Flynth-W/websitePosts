@@ -1,0 +1,30 @@
+.OptionsUser {
+  background-color: #002030;
+  position: fixed;
+  height: 10em;
+  width: 10em;
+  top: 4em;
+  left: 1em;
+  border-radius: 0.5em;
+}
+
+
+.OU-text{
+  color: #00aacc;
+  font-family: 'Courier New', monospace;
+}
+.OU-account{
+  padding: 0.5em;
+}
+.OU-name{
+  text-align: center;
+}
+.OU-exit{
+  text-align: center;
+  padding-top: 2em;
+}
+.OU-buttom{
+  color: #33dddd;
+  background-color: #444444;
+  font-family: 'Courier New', monospace;
+}

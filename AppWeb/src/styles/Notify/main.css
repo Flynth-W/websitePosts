@@ -1,27 +1,17 @@
+@import "./optionsUser.css" ;
 .Notify {
   display: block;
   position: absolute;
   top: 0;
   width: 100%;
 }
-.NotifyBodyHidden{
-  
-    outline: none;
-    z-index: 2202;
-    position: fixed;
-    left: 1354px;
-    top: 48px;
-    background-color: #00ff00;
-    display: none;
-}
 
-.NotifyBody {
-  background-color: #445599;
-  outline: none;
-  z-index: 2202;
+.Notification {
+  background-color: #442200;
   position: fixed;
-  left: 1354px;
   height: 20em;
+  top: 4em;
+  left: 1em;
 }
 
 
