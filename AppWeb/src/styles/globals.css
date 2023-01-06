@@ -2,6 +2,7 @@
 @import "./Header/main.css";
 @import "./Notify/main.css";
 @import "./Posts/main.css";
+@import "./icons.css";
 
 /* components*/
 body {

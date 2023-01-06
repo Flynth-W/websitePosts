@@ -7,8 +7,15 @@
   cursor: pointer;
 }
 .HeaderCreate{
-  background-color: #445500;
+  padding-left: 2em;
+  position: relative;
+  top: 1em;
 }
+.HCS{
+  background-color: #00aaaa;
+  border-radius: 20%;
+}
+
 .HeaderNotify{
   background-color: #005555;
 }
