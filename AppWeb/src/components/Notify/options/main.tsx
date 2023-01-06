@@ -1,7 +1,6 @@
 import { MyProfile } from "../../../db/profile/get/me"
 import { useState } from "react"
 import { useEffect } from "react"
-import { _exit } from "./onExit"
 import { useRouter } from 'next/router'
 
 export function Options(){
@@ -19,8 +18,8 @@ export function Options(){
         })
   }, [])
 
-  if (isLoading) return <p>Loading...</p>
-  if (!data) return <p>No profile data</p>
+  if (isLoading) return <></>
+  if (!data) return <></>
 
   const routesr = useRouter()
   function _exit(){
