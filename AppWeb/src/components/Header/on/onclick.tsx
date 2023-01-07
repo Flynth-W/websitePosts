@@ -5,7 +5,7 @@ export function _onclick(id:string,x:any,cmpts:any){
   }catch{
     _id=null
   }
-  console.log(_id)
+  //console.log(_id)
   //if (x.target.attributes.id.nodeValue === id || x.target.attributes.id.nodeValue === "any"){
 
   if( !!cmpts.notify.show.get ){ 
