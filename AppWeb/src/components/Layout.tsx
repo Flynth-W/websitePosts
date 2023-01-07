@@ -5,6 +5,9 @@ import { useState } from "react"
 import { _Layout } from "./onLayout/main"
 import { Pages } from "./Pages/main"
 
+import { Authenticate } from "../data/token"
+import { Login } from "./Login/page"
+
 export default function Layout(props:any){
   const [_show,_setShow]=useState(false)
   const [_data,_setData]=useState(<></>)
@@ -13,13 +16,20 @@ export default function Layout(props:any){
     show:{get:_show,set:_setShow},
     data:{get:_data,set:_setData}
   }
+  const _tk:boolean = Authenticate()
 
+  if( _tk ){
+    return (
+    <div className="App" >
+      <Header notify={notify} />
+      <Pages children={props.children} notify={notify}/ >
+      <Notify  notify={notify}/>
+    </div>
+    )
+  }else{
+    return(
+      <Login/>
+    )
+  }
 
-  return (
-  <div className="App" >
-    <Header notify={notify} />
-    <Pages children={props.children} notify={notify}/ >
-    <Notify  notify={notify}/>
-  </div>
-      )
 }

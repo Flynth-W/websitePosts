@@ -6,7 +6,7 @@ export function Actions(props:any){
   console.log(props.props.num_comment)
   return (
   <div className="Post-Acctions">
-    <Emogi num={props.props.num_like}/>
+    <Emogi num={props.props.num_like} nick_id={props.props.nick_id}/>
   </div>
       ) 
 }
