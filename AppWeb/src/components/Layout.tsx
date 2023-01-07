@@ -6,7 +6,7 @@ import { _Layout } from "./onLayout/main"
 import { Pages } from "./Pages/main"
 
 import { Authenticate } from "../data/token"
-import { Login } from "./Login/page"
+import { LoginPage } from "./Login/main"
 
 export default function Layout(props:any){
   const [_show,_setShow]=useState(false)
@@ -28,7 +28,7 @@ export default function Layout(props:any){
     )
   }else{
     return(
-      <Login/>
+      <LoginPage/>
     )
   }
 
