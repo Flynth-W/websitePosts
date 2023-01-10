@@ -1,5 +1,26 @@
 === SitePosts
 
-publications website 
+=== WARING:
 
-see page design ./_Docs/page.design/...
+  chrome and other browsers require reliable ssl verification
+  use a browser that allows you to access http://...
+  qutebrowser as development browser
+
+=== API
+  
+  use Deno ~ Typescript
+
+image::./_Docs/screenchot/API.png[]
+
+=== Web 
+  
+  use Next Js ~ Typescript
+
+==== Page Login
+
+image::./_Docs/screenchot/login.png[]
+
+==== Page Index
+
+image::./_Docs/screenchot/index.png[]
+
