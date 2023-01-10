@@ -2,6 +2,10 @@
 
 ==== Getting Started
 
+* create db "siteWeb"
+* create All Collections
+* change port to 8011 or modify in API
+
 ==== User Roles and Access
 
 
