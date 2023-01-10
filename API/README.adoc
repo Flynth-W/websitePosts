@@ -1,5 +1,7 @@
 == API for website
 
+  deno 1.29.1 (release, x86_64-unknown-linux-gnu
+
 ==== Features
 
 
@@ -10,8 +12,10 @@
 
 ==== Getting Started
 
-* Install Dependencies
-* RUN
+* check env.json
+* command
+  
+   deno run --allow-all   server.ts    
 
 
 
