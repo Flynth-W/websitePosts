@@ -1,0 +1,29 @@
+.CreatePost{
+  position: relative;
+}
+.CP-Text{
+
+  border: none;
+  background-color: inherit;
+  color: #00aaaa;
+  font-family: 'Courier New', monospace;
+}
+.CP-Pub{
+  background-color: #00aaaa;
+  position: fixed;
+  margin: 3em;
+  color: #001020;
+  padding: 0.3em;
+  border-radius: 0.2em;
+}
+
+.CP-Ok{
+  font-family: 'Courier New', monospace;
+  background-color: #00aaaa;
+  position: fixed;
+  margin: 3em;
+  margin-left: 30em;
+  color: #001020;
+  padding: 0.3em;
+  border-radius: 0.2em;
+}

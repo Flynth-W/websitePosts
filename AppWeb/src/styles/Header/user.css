@@ -6,6 +6,13 @@
   border-radius: 50%;
   cursor: pointer;
 }
+.SVG-Avatar{
+  background-color: #00ffff;
+  width: 3em;
+  height: 3em;
+  padding: 0.2em;
+  border-radius: 50%;
+}
 .HeaderCreate{
   padding-left: 2em;
   position: relative;

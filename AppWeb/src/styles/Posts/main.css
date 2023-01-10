@@ -1,20 +1,26 @@
 @import "./acctions.css";
+@import "./create.css";
 
+.PostB{
+  background-color: #03071e;
+  width: 60em;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em;
+}
 .Post{
-  background-color: #005534;
   position: relative;
   width: 60em;
 }
 .Post-Top {
-  background-color: #770044;
   display: flex;
 }
 .Post-Author {
-  background-color: #994000;
-  position: absolute;
+  padding: 0.2em;
+  color: #00aa77;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9em;
 
-  right: 0;
-  height: 1.5em;
 }
 .Post-Options {
   background-color: #004520;
@@ -24,11 +30,14 @@
 }
 
 .Post-Body {
-  background-color: #444444;
   display: block;
 }
 .Post-Text{
-  background-color: #aaaa00;
+  background-color: #03272e;
+  padding: 0.5em;
+  font-family: 'Courier New', monospace;
+  color: #00a7a7 ;
+  border-radius: 0.3em;
 }
 .Post-Image{
   background-color: #00aa00;
@@ -36,12 +45,6 @@
 
 
 .Post-Bottom {
-  background-color: #994400 ;
-}
-.Post-Acctions{
-  background-color: #004455;
-  display: flex;
-  justify-content: space-between ;
-  padding: 0.2em;
+  background-color: inherit ;
 }
 

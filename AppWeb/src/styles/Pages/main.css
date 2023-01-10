@@ -1,5 +1,18 @@
 @import "./index.css";
+@import "./login.css";
 
 .Pages {
-  background-color: #224f10;
+  background-color: inherit;
+}
+.SearchPage{
+  background-color: #001020;
+  color: #44aaaa;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+  padding: 1em;
+}
+.CreatePage{
+  display: flex;
+  justify-content: center;
 }

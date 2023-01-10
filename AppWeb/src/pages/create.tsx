@@ -1,8 +1,9 @@
+import { CreatePost } from "../components/posts/create/main"
 
 export default ()=>{
   return (
-    <div>
-      Create Page
+    <div className="CreatePage">
+      <CreatePost/>
     </div>
       )
 }

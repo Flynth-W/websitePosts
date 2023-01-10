@@ -1,3 +1,25 @@
 .HeaderSearch{
-  background-color: #00aaaa;
+  padding-right: 2em;
+  padding-left: 1em;
+}
+.HSI{
+  position: relative;
+  top: 2em;
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid #00aaaa;
+  color: #00aaaa;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+}
+.HSIS{
+  position: relative;
+  top: 2em;
+  border: none;
+  background-color: inherit;
+  border-bottom: 2px solid #00aaaa;
+  color: #00aaaa;
+  font-family: 'Courier New', monospace;
+  font-size: 1em;
+
 }

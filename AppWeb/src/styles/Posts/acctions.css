@@ -1,6 +1,16 @@
+.Post-Acctions{
+  background-color: inherit;
+  display: flex;
+  justify-content: space-between ;
+  padding: 0.2em;
+}
+
+
 .PA-Emogi{
-  background-color: #aa0000 ;
+  color: #03a7ae;
   margin-right: 2em;
+  border-radius: 0.3em;
+  font-family: 'Courier New', monospace;
 }
 .PA-Share{
   background-color: #00aa00;
@@ -8,4 +18,5 @@
 }
 .PA-Comment{
   background-color: #00aaaa;
+  margin-left: 2em;
 }

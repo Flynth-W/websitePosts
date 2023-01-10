@@ -7,10 +7,10 @@
 /* components*/
 body {
   margin:  0%;
-  background-color: #111111;
+  background-color: #001020;
 }
 
 
 .App {
- background-color: #112222;
+ background-color: inherit;
 }
