@@ -14,13 +14,13 @@ const _accountModel:TypeUserAccount= {
   name:{ 
     check:{
       post:_name,
-      put:ModelChecks.string.length(1,10)
+      put:ModelChecks.string.length(1,30)
     }
   },
   password:{
     check:{
-      post:ModelChecks.string.length(1,10),
-      put:ModelChecks.string.length(1,10)
+      post:ModelChecks.string.length(1,30),
+      put:ModelChecks.string.length(1,30)
     }
   }
 }
