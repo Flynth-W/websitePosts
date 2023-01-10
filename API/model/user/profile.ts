@@ -13,8 +13,8 @@ export type TypeUserProfile = {
 const _Model:TypeUserProfile= {
   name:{ 
     check:{
-      post:ModelChecks.string.length(1,15),
-      put:ModelChecks.string.length(1,15)
+      post:ModelChecks.string.length(1,30),
+      put:ModelChecks.string.length(1,30)
     }
   },
   age:{
